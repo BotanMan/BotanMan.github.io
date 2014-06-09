@@ -1,0 +1,21 @@
+﻿i {
+    padding-right: 3px;
+}
+
+.header > .container-fluid {
+    background: #eee;
+    padding-bottom: 20px;
+}
+
+    .header > .container-fluid span {
+        font-size: 2.5em;
+    }
+
+    .header > .container-fluid .header-icon {
+        padding-top: 20px;
+        padding-left: 34px;
+    }
+
+.container-fluid.content > h3 {
+    padding-bottom: 20px;
+}
