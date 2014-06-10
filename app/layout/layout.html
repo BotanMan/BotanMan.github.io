@@ -1,6 +1,7 @@
-﻿<div ui-view></div>
+﻿<div ui-view>
+</div>
 <footer>
-    <div class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="navbar navbar-inverse navbar-fixed-bottom hidden-lg hidden-md hidden-sm">
         <div class="container">
             <div class="navbar-collapse collapse" id="footer-body">
                 <ul class="nav navbar-nav">
@@ -17,7 +18,17 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-
+        </div>
+    </div>
+        <div class="container">
+    <div class="hidden-xs dock">
+                <ul>
+                    <li ui-sref-active="active"><a ui-sref="root.main"><em><span>Main menu</span></em><i class="fa fa-th-list fa-4x"></i></a></li>
+                    <li ui-sref-active="active"><a ui-sref="root.addressBook"><i class="fa fa-users fa-4x"></i><em><span>Address book</span></em></a></li>
+                    <li ui-sref-active="active"><a ui-sref="root.profile"><i class="fa fa-user fa-4x"></i><em><span>Edit profile</span></em></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out fa-4x"></i><em><span>Log out</span></em></a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </footer>

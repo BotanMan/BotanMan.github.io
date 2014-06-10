@@ -1,11 +1,6 @@
 ﻿app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+    //states
     $stateProvider
-        // login prototype
-        //.state('login', {
-        //    url: "/login",
-        //    templateUrl: 'app/login/login.cshtml',
-        //    controller: 'loginCtrl'
-        //})
         // root
         .state('root', {
             "abstract": true,
@@ -21,7 +16,7 @@
             url: "/main",
             templateUrl: 'app/main/main.html'
         })
-        // bizTalk dashboard
+        //edit profile
         .state('root.profile', {
             url: "/profile",
             templateUrl: 'app/profile/profile.html'

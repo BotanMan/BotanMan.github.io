@@ -28,6 +28,16 @@ ul {
         background: white;
         color: #222;
     }
+    
+    .navbar-fixed-bottom ul, .navbar-fixed-bottom li
+    {
+        width: 100%
+    }
+    
+    .navbar-collapse.collapse
+    {
+        overflow: hidden;
+    }
 
 @media (max-width: 768px) {
     .navbar {

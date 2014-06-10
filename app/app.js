@@ -1,5 +1,6 @@
 ﻿'use strict';
 
+//app module
 var app = angular.module('app', [
   'ngRoute',
   'ngAnimate',
@@ -9,15 +10,15 @@ var app = angular.module('app', [
 ])
 
     .run(
-      ['$rootScope', '$state', '$stateParams','$http', 
+      ['$rootScope', '$state', '$stateParams','$http',
           function ($rootScope, $state, $stateParams, $http) {
-              $http.defaults.useXDomain = true;
-		      //transclude state and stateParams to $rootScope
+              //transclude state and stateParams to $rootScope
               $rootScope.state = $state;
               $rootScope.stateParams = $stateParams;
           }]);
 
 
+//attach fastclick module for touch devices
 angular.module('fastClick', []).
 run(function () {
     FastClick.attach(document.body);
